@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+/*nav*/
+
+.navbar {
+    padding-top: 46px;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.nav__container {
+    display: flex;
+    width: 1251px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 445.46px;
+    justify-content: space-between;
+    margin-left: 55px;
+}
+
+.nav__link {
+    color: rgb(96, 96, 96);
+    font-family: Inter, sans-serif;
+    font-size: 17.83px;
+    font-weight: 600;
+    line-height: 26.74px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+}
+
+.search__connect {
+    display: flex;
+    flex-direction: row;
+    gap: 30.03px;
+    margin-left: 115px;
+}
+
+#search-input {
+    border-radius: 14.88px;
+    background: #EDEDED;
+    background: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 24px center;
+    border: none;
+    width: 348.45px;
+    height: 57px;
+    text-align: center;
+    color: rgb(194, 195, 203);
+    font-family: Poppins, serif;
+    font-size: 15.71px;
+    font-weight: 500;
+    line-height: 117.5%;
+    padding: 1px 11px 1px 0px;
+}
+
+.connect {
+    width: 199.52px;
+    height: 57.34px;
+    border-radius: 16.17px;
+    background: #141416;
+    color: #FFFFFF;
+    font-family: Inter, sans-serif;
+    font-size: 16.17px;
+    font-weight: 600;
+    line-height: 24.26px;
+    text-transform: uppercase;
+}
