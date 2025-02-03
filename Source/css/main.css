@@ -53,6 +53,10 @@ body {
     text-decoration: none;
     margin: 0;
 }
+.nav__link:hover{
+    scale: 105%;
+    color: black;
+}
 
 .search__connect {
     display: flex;
@@ -60,13 +64,20 @@ body {
     gap: 30.03px;
     margin-left: 115px;
 }
-
+#search-form{
+    display: flex;
+    position: relative;
+}
+#search-form img{
+    position: absolute;
+    width: 21.51px;
+    height: 21.51px;
+    top: 17px;
+    left: 23px;
+}
 #search-input {
     border-radius: 14.88px;
-    background: #EDEDED;
-    background: url(../img/lupa.png);
-    background-repeat: no-repeat;
-    background-position: 24px center;
+    background-color: #EDEDED;
     border: none;
     width: 348.45px;
     height: 57px;
@@ -77,6 +88,9 @@ body {
     font-weight: 500;
     line-height: 117.5%;
     padding: 1px 11px 1px 0px;
+}
+#search-input:hover{
+    color: rgb(0, 0, 0);
 }
 
 .connect {
@@ -90,4 +104,9 @@ body {
     font-weight: 600;
     line-height: 24.26px;
     text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+.connect:hover{
+    scale: 105%;
 }
