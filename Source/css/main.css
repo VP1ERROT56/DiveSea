@@ -30,6 +30,11 @@ body {
     width: 1251px;
 }
 
+.left {
+    display: flex;
+    margin: 0;
+}
+
 .logo {
     margin: 0;
 }
@@ -53,7 +58,8 @@ body {
     text-decoration: none;
     margin: 0;
 }
-.nav__link:hover{
+
+.nav__link:hover {
     scale: 105%;
     color: black;
 }
@@ -64,17 +70,20 @@ body {
     gap: 30.03px;
     margin-left: 115px;
 }
-#search-form{
+
+#search-form {
     display: flex;
     position: relative;
 }
-#search-form img{
+
+#search-form img {
     position: absolute;
     width: 21.51px;
     height: 21.51px;
     top: 17px;
     left: 23px;
 }
+
 #search-input {
     border-radius: 14.88px;
     background-color: #EDEDED;
@@ -89,7 +98,8 @@ body {
     line-height: 117.5%;
     padding: 1px 11px 1px 0px;
 }
-#search-input:hover{
+
+#search-input:hover {
     color: rgb(0, 0, 0);
 }
 
@@ -107,6 +117,90 @@ body {
     cursor: pointer;
     border: none;
 }
-.connect:hover{
+
+.connect:hover {
     scale: 105%;
+}
+
+/*media*/
+
+/*nav*/
+
+@media (max-width: 1281px) {
+    .nav__container {
+        margin: 0;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .search__connect {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 1195px) {
+    .nav {
+        margin-left: 15px;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .search__connect {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        max-width: 1024px;
+    }
+    .left {
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .logo img {
+        width: 37px;
+        height: 37px;
+    }
+    .nav{
+        margin: 0;
+        flex-direction: row;
+        gap: 38px;
+    }
+
+    .nav__link {
+        font-size: 12.68px;
+        line-height: 19.02px;
+    }
+.search__connect{
+    gap: 20px;
+}
+    #search-input {
+        width: 247.81px;
+        height: 40.54px;
+        font-size: 11.17px;
+        line-height: 117.5%;
+    }
+
+    #search-form img {
+        width: 15.3px;
+        height: 15.3px;
+        top: 13px;
+        left: 14px;
+    }
+
+    .connect {
+        width: 142.5px;
+        height: 41px;
+        font-size: 11.5px;
+        line-height: 17.25px;
+    }
+}
+@media (max-width: 845px){
+    
 }
