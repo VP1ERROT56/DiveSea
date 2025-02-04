@@ -35,8 +35,18 @@ body {
     margin: 0;
 }
 
+.logo__grupe {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .logo {
     margin: 0;
+}
+
+.name__logo {
+    display: none;
 }
 
 .nav {
@@ -47,6 +57,46 @@ body {
     justify-content: space-between;
     margin-left: 55px;
 }
+
+.header__burger-btn {
+    display: none;
+    background-color: #F9F9F9;
+    position: relative;
+    width: 41px;
+    height: 41px;
+    border: none;
+    padding: 0;
+    align-items: center;
+}
+
+.burger {
+    position: absolute;
+    width: 31px;
+    height: 2px;
+    background-color: black;
+    left: 5px;
+}
+
+.burger:nth-child(1) {
+    transform: translateY(11px);
+}
+
+.burger:nth-child(3) {
+    transform: translateY(-11px);
+}
+
+.navbar.open .burger:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.navbar.open .burger:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.open .burger:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
 
 .nav__link {
     color: rgb(96, 96, 96);
@@ -154,9 +204,10 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .container{
+    .container {
         max-width: 1024px;
     }
+
     .left {
         align-items: center;
         flex-direction: row;
@@ -167,7 +218,8 @@ body {
         width: 37px;
         height: 37px;
     }
-    .nav{
+
+    .nav {
         margin: 0;
         flex-direction: row;
         gap: 38px;
@@ -177,9 +229,11 @@ body {
         font-size: 12.68px;
         line-height: 19.02px;
     }
-.search__connect{
-    gap: 20px;
-}
+
+    .search__connect {
+        gap: 20px;
+    }
+
     #search-input {
         width: 247.81px;
         height: 40.54px;
@@ -201,6 +255,74 @@ body {
         line-height: 17.25px;
     }
 }
-@media (max-width: 845px){
-    
+
+@media (max-width: 845px) {
+    .container {
+        max-width: 845px;
+    }
+
+    .nav__container {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .logo__grupe {
+        width: 100%;
+        gap: 11px;
+    }
+
+    .logo img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .name__logo {
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+
+    .name__logo img {
+        width: 88px;
+        height: 28px;
+    }
+
+    .nav {
+        justify-content: end;
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .header__burger-btn {
+        display: flex;
+        margin: 0;
+    }
+
+    .header__line {
+        height: 2px;
+        display: flex;
+    }
+
+    .line {
+
+        height: 0.5px;
+        width: 845px;
+        background-color: #CBCBCB;
+        margin: 0 auto;
+    }
+
+    .search__connect {
+        display: none;
+    }
+
+    .navbar.open.nav__link{
+        display: block;
+    }
 }
