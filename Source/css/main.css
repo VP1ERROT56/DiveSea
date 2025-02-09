@@ -54,8 +54,13 @@ body {
     align-items: center;
     justify-content: center;
     width: 445.46px;
-    justify-content: space-between;
     margin-left: 55px;
+}
+
+.nav__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header__burger-btn {
@@ -85,18 +90,19 @@ body {
     transform: translateY(-11px);
 }
 
-.navbar.open .burger:nth-child(1) {
+.nav.open .burger:nth-child(1) {
     transform: translateY(0) rotate(45deg);
 }
 
-.navbar.open .burger:nth-child(2) {
+.nav.open .burger:nth-child(2) {
     opacity: 0;
 }
 
-.navbar.open .burger:nth-child(3) {
+.nav.open .burger:nth-child(3) {
     transform: translateY(0) rotate(-45deg);
 }
 
+.nav__item {}
 
 .nav__link {
     color: rgb(96, 96, 96);
@@ -107,6 +113,14 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     margin: 0;
+}
+.overlay{
+    position: relative;
+        width: 100%;
+        height: 110px;
+        background-color: #f9f9f9;
+        display: none; /* Скрываем поле по умолчанию */
+        /* Уровень под меню */
 }
 
 .nav__link:hover {
@@ -193,8 +207,10 @@ body {
 @media (max-width: 1195px) {
     .nav {
         margin-left: 15px;
-        flex-direction: row;
-        gap: 20px;
+        width: 340px;
+    }
+
+    .nav__list {
         width: 100%;
     }
 
@@ -211,7 +227,7 @@ body {
     .left {
         align-items: center;
         flex-direction: row;
-        gap: 30px;
+        gap: 20px;
     }
 
     .logo img {
@@ -220,9 +236,7 @@ body {
     }
 
     .nav {
-        margin: 0;
-        flex-direction: row;
-        gap: 38px;
+        width: 320px;
     }
 
     .nav__link {
@@ -269,6 +283,7 @@ body {
         width: 100%;
         justify-content: space-between;
         margin-bottom: 20px;
+        height: 50px;
     }
 
     .logo__grupe {
@@ -291,13 +306,20 @@ body {
         width: 88px;
         height: 28px;
     }
-
-    .nav {
-        justify-content: end;
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        height: 41px;
+        position: absolute;
+        right: 15px;
+        width: 100%;
     }
 
-    .nav__link {
+    .nav__list{
         display: none;
+        margin: 0;
+        flex-direction: column;
     }
 
     .header__burger-btn {
@@ -322,7 +344,28 @@ body {
         display: none;
     }
 
-    .navbar.open.nav__link{
-        display: block;
+    .nav.open .nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        top: 35px;
+        width: 100%;
+        left: 30px;
+        
+    }
+
+    .nav.open .header__burger-btn{
+        margin-top: 100px;
+    }
+
+    .nav.open .header__line{
+        display: none;
+    }
+    .nav.open .overlay{
+        position: fixed;
+        display: flex;
+        height: 110px;
+        top: 100px;
     }
 }
