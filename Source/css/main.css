@@ -16,3 +16,269 @@ body {
 
 /*nav*/
 
+.container {
+    padding: 0 96px;
+}
+.nav__container {
+    display: flex;
+    padding-top: 45px;
+    min-height: 58px;
+    justify-content: space-between;
+}
+.logo__menu {
+    display: flex;
+    margin: 0;
+    max-width: 555.52px;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo__grup {
+    display: flex;
+    margin: 0;
+}
+.long__logo {
+    display: none;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    max-width: 445.46px;
+    width: 100%;
+}
+.burger {
+    width: 31.5px;
+    height: 22.33px;
+    position: relative;
+    display: none;
+}
+.burgers {
+    position: absolute;
+    width: 31.5px;
+    height: 2px;
+    background-color: #282828;
+}
+.burgers:nth-child(1) {
+    transform: translateY(10.44px);
+}
+.burgers:nth-child(3) {
+    transform: translateY(19.88px);
+}
+.menu.open .burgers:nth-child(1) {
+    opacity: 0;
+}
+.menu.open .burgers:nth-child(2) {
+    transform: translateY(0) rotate(45deg);
+    top: 10px;
+}
+.menu.open .burgers:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    top: 10px;
+}
+.menu__list {
+    justify-content: space-between;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+.item {
+    color: #606060;
+    font-family: Inter, sans-serif;
+    font-size: 17.83px;
+    font-weight: 500;
+    line-height: 26.74px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+}
+.input {
+    display: flex;
+    max-width: 578.04px;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+}
+.form__search {
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+.magnifier {
+    width: 21.51px;
+    height: 21.51px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+.search {
+    width: 348.45px;
+    height: 57px;
+    border-radius: 14.88px;
+    border: none;
+    background-color: #EDEDED;
+    text-align: center;
+    color: rgb(194, 195, 203);
+    font-family: Poppins, sans-serif;
+    font-size: 15.71px;
+    font-weight: 500;
+    line-height: 117.5%;
+    letter-spacing: -2%;
+    opacity: 0.5;
+}
+.wallet {
+    margin: 0;
+}
+.btn__wallet {
+    width: 199.52px;
+    height: 57.34px;
+    border-radius: 16.17px;
+    border: none;
+    background-color: #141416;
+    color: #FFFFFF;
+    font-family: Inter, sans-serif;
+    font-size: 16.17px;
+    font-weight: 600;
+    line-height: 24.26px;
+    text-transform: uppercase;
+}
+.line{
+    max-width: 930px;
+    width: 100%;
+    height: 0.5px;
+    display: flex;
+    background-color: #CBCBCB;
+    display: none;
+}
+
+
+/*nav*/
+@media(max-width:1351px) {
+    .container {
+        padding: 0 68px;
+    }
+
+    .nav__container {
+        padding-top: 32px;
+    }
+
+    .logo__menu {
+        max-width: 395.06px;
+    }
+
+    .logo__grup {
+        align-items: center;
+    }
+
+    .mini__logo {
+        width: 37.69px;
+        height: 37.69px;
+    }
+
+    .mini__logo img {
+        width: 37.69px;
+        height: 37.69px;
+    }
+
+    .menu {
+        max-width: 317.11px;
+    }
+
+    .item {
+        font-size: 12.68px;
+        line-height: 19.02px;
+    }
+
+    .input {
+        margin-left: 20px;
+        max-width: 441.06px;
+    }
+
+    .magnifier {
+        width: 15.3px;
+        height: 15.3px;
+        top: 13px;
+    }
+
+    .search {
+        height: 40.54px;
+        width: 247.81px;
+        font-size: 11.17px;
+    }
+
+    .wallet {
+        margin-left: 15px;
+    }
+
+    .btn__wallet {
+        width: 142.5px;
+        height: 41px;
+        font-size: 11.5px;
+        font-weight: 600;
+        line-height: 17.25px;
+    }
+}
+
+@media(max-width:931px){
+    .container{
+        padding: 0 30px;
+    }
+    .nav__container{
+    margin-bottom: 29.59px;
+    padding-top: 30px;
+}
+.logo__grup{
+    max-width: 141.46px;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo__menu{
+    max-width: 930px;
+    width: 100%;
+}
+.mini__logo {
+    width: 46.41px;
+    height: 46.41px;
+    margin: 0;
+}
+.mini__logo img {
+    width: 46.41px;
+    height: 46.41px;
+}
+.long__logo{
+    display: flex;
+    margin: 0;
+}
+.menu{
+    justify-content: end;
+}
+.burger{
+    display: flex;
+    margin: 0;
+}
+.menu__list{
+    display: none;
+}
+.input{
+    display: none;
+}
+.line{
+    display: flex;
+}
+.menu.open .menu{
+    flex-direction: ;
+}
+.menu.open .menu__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+    top: 105px;
+}
+.menu.open .item{
+font-size: 17.83px;
+font-weight: 500;
+line-height: 26.74px;
+text-align: center;
+}
+}

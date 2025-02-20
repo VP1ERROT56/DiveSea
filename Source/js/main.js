@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("burgers").addEventListener("click", function () {
-        document.getElementById("nav__item").classList.toggle("open")
+    document.getElementById("burger").addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("open")
     })
 })
