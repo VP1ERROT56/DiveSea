@@ -186,9 +186,7 @@ body {
 
 /*header*/
 
-.header {
-    margin-bottom: 500px;
-}
+.header {}
 
 .header__padding {
     padding-right: 0;
@@ -197,7 +195,8 @@ body {
 
 .header__container {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
+    min-height: 685px;
 }
 
 .hero__left {
@@ -221,7 +220,17 @@ justify-content: space-between;
     opacity: 0.2;
 }
 
-.hero__text {}
+.item__line {
+    color: #201F1F;
+    font-family: Poppins, sans-serif;
+    font-size: 9.25px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 1.23px;
+    text-transform: uppercase;
+    opacity: 0.3;
+    display: none;
+}
 
 .hero__title {
     color: #141416;
@@ -265,12 +274,19 @@ justify-content: space-between;
     height: 60px
 }
 
+.more:hover{
+    background-color: #F9F9F9;
+    border: 1.5px solid #000000;
+    color: #000000;
+}
+
 .btn__text {
     font-family: Poppins, sans-serif;
     font-size: 16.27px;
     font-weight: 500;
     line-height: 24px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn__hero-form {
@@ -283,6 +299,13 @@ justify-content: space-between;
     height: 60px;
     border-radius: 12.41px;
     border: 1.5px solid #000000;
+    background-color: #F9F9F9
+}
+
+.create:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
 }
 
 .hero__stats {
@@ -315,15 +338,43 @@ justify-content: space-between;
     line-height: 18.39px;
 }
 
+.stars__hero {
+    max-width: 241.56px;
+    width: 100%;
+    height: 25.61px;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.stars__right {
+    align-items: center;
+    display: flex;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.stars__stats {
+    color: #334155;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-size: 12.81px;
+    font-weight: 500;
+    line-height: 19.22px;
+    opacity: 0.7;
+}
+
+
 .hero__right {
     display: flex;
     flex-direction: column;
     height: 553.99px;
     position: relative;
     margin: 0;
-
     bottom: 12px;
-width: 746.67px;
+    width: 746.67px;
 }
 
 .up__img {
@@ -375,6 +426,7 @@ width: 746.67px;
     background-color: #FCFCFD;
     align-items: center;
     box-shadow: 0px 43.12px 34.49px -25.87px rgba(15, 15, 15, 0.12);
+    justify-content: space-between;
 }
 
 .right__btn-form {
@@ -382,18 +434,32 @@ width: 746.67px;
     background-color: #FCFCFD;
 }
 
-.btn__right-button {
-    border: none;
-    background-color: #FCFCFD;
+.btn__line-hero {
+    width: 2.16px;
+    height: 25.87px;
+    display: flex;
 }
 
-.back {}
+.line__hero-vertical {
+    width: 2.16px;
+    border-radius: 2.16px;
+    height: 25.87px;
+    background-color: #E6E8EC;
+    margin: 0;
+}
 
-.next {}
 
-
-
+.btn__right-button {
+    margin: 0;
+    border: none;
+    background-color: #FCFCFD;
+    cursor: pointer;
+}
+.btn__right-button:hover{
+    scale: 120%;
+}
 /*nav*/
+
 @media(max-width:1351px) {
     .container {
         padding: 0 68px;
@@ -529,6 +595,8 @@ width: 746.67px;
         position: absolute;
         left: 0;
         top: 115px;
+        background-color: #F9F9F9;
+        z-index: 1;
     }
 
     .menu.open .item {
@@ -537,4 +605,339 @@ width: 746.67px;
         line-height: 26.74px;
         text-align: center;
     }
+}
+
+/*header*/
+
+@media(max-width:1351px) {
+    .nav {
+        margin-bottom: 78.6px;
+    }
+
+    .hero__line {
+        max-width: 138.68px;
+        margin: 0 0 14.94px 0;
+    }
+
+    .h__line {
+        width: 138.68px;
+    }
+
+
+    .hero__title {
+        font-size: 53.34px;
+        letter-spacing: -2.13px;
+        margin-bottom: 18.86;
+    }
+
+    .hero__item {
+        font-size: 12.8px;
+        line-height: 19.91px;
+        margin-bottom: 31.82px;
+    }
+
+
+    .btn__hero {
+        width: 241.8px;
+        height: 42.67px;
+        margin-bottom: 58.32px;
+    }
+
+
+    .more {
+        width: 127.3px;
+        height: 42.67px;
+    }
+
+    .btn__text {
+        font-size: 11.57px;
+        line-height: 17px;
+    }
+
+    .create {
+        width: 98.14px;
+        height: 42.67px;
+    }
+
+    .hero__stats {
+        max-width: 322.29px;
+        height: 50.93px;
+    }
+
+    .stats__title {
+        font-size: 26.15px;
+        line-height: 32.69px;
+        margin-bottom: 4px;
+    }
+
+    .stats__item {
+        font-size: 8.72px;
+        line-height: 13.08px;
+    }
+
+    .hero__right {
+        width: 554.72px;
+        height: 393.98px;
+    }
+
+    .up__img {
+        width: 278.07px;
+        height: 280.62px;
+        top: 13.51px;
+    }
+
+    .up__img img {
+        width: 278.07px;
+        height: 280.62px;
+    }
+
+    .arrow {
+        width: 91.59px;
+        height: 88.34px;
+        left: 293.72px;
+        top: 42.67px;
+    }
+
+    .arrow img {
+        width: 91.59px;
+        height: 88.34px;
+    }
+
+    .bg {
+        width: 82.7px;
+        height: 136.71px;
+        left: 431.68px;
+    }
+
+    .bg img {
+        width: 82.7px;
+        height: 136.71px;
+    }
+
+    .bottom__img {
+        width: 226.98px;
+        height: 229.06px;
+        left: 305.58px;
+        top: 142.24px;
+    }
+
+    .bottom__img img {
+        width: 226.98px;
+        height: 229.06px;
+    }
+
+    .btn__right {
+        width: 118.06px;
+        height: 49.06px;
+        box-shadow: 0px 30.66px 24.53px -18.4px rgba(15, 15, 15, 0.12);
+        left: 79.65px;
+        top: 344.92px;
+    }
+
+    .btn__right-button img {
+        width: 18.42px;
+        height: 18.42px;
+    }
+
+    .btn__line-hero {
+        width: 1.53px;
+        height: 18.4px;
+    }
+
+    .line__hero-vertical {
+        width: 1.53px;
+        height: 18.4px;
+    }
+
+}
+
+@media(max-width:931px) {
+    .nav {
+        margin-bottom: 74px;
+    }
+
+    .header {}
+
+    .header__padding {}
+
+    .header__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .hero__line {
+        max-width: 153.62px;
+        width: 100%;
+        height: 11px;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+
+    .h__line {
+        width: 33.29px;
+    }
+
+    .item__line {
+        display: flex;
+    }
+
+    .hero__text {}
+
+    .hero__title {
+        font-size: 47.4px;
+        letter-spacing: -1.9px;
+        text-align: center;
+        margin-bottom: 19.74px;
+    }
+
+    .hero__item {
+        text-align: center;
+        font-size: 11.38px;
+        margin-bottom: 42.15px;
+    }
+
+    .bonus {}
+
+    .btn__hero {
+        margin: 0 auto;
+        width: 244px;
+        height: 47px;
+        margin-bottom: 19px;
+    }
+
+    .btn__hero-form {}
+
+    .more {
+        width: 128px;
+        height: 47px;
+    }
+
+    .btn__text {
+        font-size: 11.66px;
+    }
+
+    .create {
+        width: 99px;
+        height: 47px;
+    }
+
+    .hero__stats {
+        display: none;
+    }
+
+    .stats {}
+
+    .stats__title {}
+
+    .stats__item {}
+
+    .stars__hero {
+        display: flex;
+        margin-bottom: 60.39px;
+    }
+
+    .stars__left {}
+
+    .stars__logo {}
+
+    .stars__right {}
+
+    .stars {}
+
+    .stars__stats {}
+
+    .hero__right {
+        max-width: 400px;
+        width: 100%;
+height: 295.4px;
+    }
+
+    .up__img {
+        width: 208.49px;
+        height: 210.4px;
+        top: 10.13px;
+    }
+
+    .up__img img {
+        width: 208.49px;
+        height: 210.4px;
+    }
+
+    .arrow {
+        width: 58.79px;
+        height: 56.71px;
+        top: 40.51px;
+        left: 218.22px;
+    }
+
+    .arrow img {
+        width: 58.79px;
+        height: 56.71px;
+    }
+
+    .bg {
+        width: 41.84px;
+        height: 102.5px;
+        left: 298.31px;
+    }
+
+    .bg img {
+        width: 41.84px;
+        height: 102.5px;
+    }
+
+    .bottom__img {
+        width: 170.18px;
+        height: 171.74px;
+        top: 90px;
+        left: 229.82px;
+    }
+
+    .bottom__img img {
+        width: 170.18px;
+        height: 171.74px;
+    }
+
+    .btn__right {
+        width: 88.51px;
+        height: 36.79px;
+        box-shadow: 0px 22.99px 18.39px -13.79px rgba(15, 15, 15, 0.12);
+        padding: 0 10px;
+        left: 59.72px;
+        top: 258.61px;
+    }
+
+    .right__btn-form {
+        margin: 0;
+    }
+
+    .btn__right-button {
+        width: 13.79px;
+        height: 13.79px;
+        margin: 0;
+        padding: 0;
+    }
+    .btn__right-button img {
+        width: 13.79px;
+        height: 13.79px;
+        
+    }
+
+    .back {}
+
+    .btn__line-hero {
+        margin: 0;
+    }
+
+    .line__hero-vertical {}
+
+    .next {}
+
 }
