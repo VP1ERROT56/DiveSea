@@ -67,6 +67,7 @@ body {
     width: 31.5px;
     height: 2px;
     background-color: #282828;
+    transition: transform .5s, opacity .5s;
 }
 
 .burgers:nth-child(1) {
