@@ -938,7 +938,12 @@ body {
   margin: 0;
 }
 
-.top__profile-logo img {
+.top__profile-logo_img {
+  width: 84.04px;
+  height: 84.04px;
+}
+
+.top__profile-logo_img img {
   width: 84.04px;
   height: 84.04px;
 }
@@ -1963,9 +1968,15 @@ body {
 
   .top__profile-logo {
     width: 59.77px;
+    height: 59.77px;
   }
 
-  .top__profile-logo img {
+  .top__profile-logo_img {
+    width: 59.77px;
+    height: 59.77px;
+  }
+
+  .top__profile-logo_img img {
     width: 59.77px;
     height: 59.77px;
   }
@@ -2065,6 +2076,7 @@ body {
 
   .top__user-filter {
     margin-bottom: 25px;
+    gap: 0;
   }
 
   .ferst__colums {
@@ -2073,11 +2085,15 @@ body {
   }
 
   .top__collection-title {
-    font-size: 15.65px;
+font-size: 14px;
+  }
+
+  .right__mobile{
+    text-align: end;
   }
 
   .top__volume {
-    width: 64px;
+    width: 63.27px;
   }
 
   .top__24h {
@@ -2097,9 +2113,10 @@ body {
   }
 
   .top__users-card {
-    gap: 151.21px;
-    margin-bottom: 17.86px;
+    gap: 0px;
+    margin-bottom: 13.2px;
   }
+
 
   .top__profile {
     gap: 16.82px;
@@ -2114,16 +2131,26 @@ body {
   .top__profile-logo_img {
     width: 46.24px;
     height: 46.24px;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
+  }
+  .top__profile-logo_img img {
+    width: 46.24px;
+    height: 46.24px;
   }
 
   .logo__nubmer-seat {
     display: flex;
+    position: absolute;
     width: 21.19px;
     height: 21.19px;
-    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .logo__nubmer-seat img {
+    width: 21.19px;
+    height: 21.19px;
   }
 
   .top__profile-name {
@@ -2131,11 +2158,11 @@ body {
   }
 
   .top__ferst-name {
-    font-size: 19.92px;
+font-size: 15.41px;
   }
 
   .top__last-name {
-    font-size: 16.19px;
+    font-size: 15.41px;
   }
 
   .stats__users-all {
@@ -2144,25 +2171,27 @@ body {
   }
 
   .eth {
-    width: 74.9px;
+    width: 63.27px;
     gap: 1.93px;
+    justify-content: end;
   }
 
   .top__eth {
-    width: 22.41px;
-    height: 22.41px;
+    width: 17.34px;
+height: 17.34px;
   }
 
   .eth__number {
-    font-size: 17.43px;
+font-size: 15.41px;
   }
 
   .percent__user {
-    width: 77px;
+    width: 63.27px;
   }
 
   .top__percent {
-    font-size: 17.43px;
+    font-size: 13.49px;
+    margin-right: 0;
   }
 
   .floor__eth {
@@ -2181,9 +2210,16 @@ body {
     margin-bottom: 24.77px;
   }
 
+  .explore{
+    margin: 0 auto;
+  }
+  .explore a{
+    gap: 12.29px;
+  }
+
   .explore__more {
-    font-size: 12.57px;
-    line-height: 28.39px;
+    font-size: 12.29px;
+    line-height: 27.76px;
     letter-spacing: -0.06px;
   }
 
